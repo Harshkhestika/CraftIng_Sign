@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f4f0; /* Light background to prevent white-on-white blindness */
+  font-size: 16px; /* Increased base font size for better readability */
+}
+
+/* Increase font sizes across the website */
+* {
+  font-size: inherit;
+}
+
+p, span, div, a, button, input, select, textarea, label {
+  font-size: 1em;
+}
+
+/* Slightly increase specific text sizes */
+.text-xs {
+  font-size: 0.875rem; /* 14px instead of 12px */
+}
+
+.text-sm {
+  font-size: 1rem; /* 16px instead of 14px */
+}
+
+.text-base {
+  font-size: 1.125rem; /* 18px instead of 16px */
+}
+
+/* Mobile Responsive Improvements */
+@media (max-width: 640px) {
+  /* Better touch targets on mobile */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better text wrapping */
+  h1, h2, h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Improve form inputs on mobile */
+  input, select, textarea {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+}
+
+/* Line clamp utility for text truncation */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Better container padding on mobile */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}

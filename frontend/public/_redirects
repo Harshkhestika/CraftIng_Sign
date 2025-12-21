@@ -1,0 +1,5 @@
+# API Proxy - redirects /api/* to backend
+/api/*  https://seahorse-app-fq2tu.ondigitalocean.app/api/:splat  200
+
+# SPA Redirect - All other routes serve index.html (React Router)
+/*   /index.html   200

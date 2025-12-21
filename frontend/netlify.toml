@@ -1,0 +1,37 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# API Proxy - redirects /api/* to your backend (must come BEFORE SPA redirect)
+[[redirects]]
+  from = "/api/*"
+  to = "https://seahorse-app-fq2tu.ondigitalocean.app/api/:splat"
+  status = 200
+  force = true
+
+# SPA Redirect - All other routes should serve index.html (React Router)
+# This must come AFTER API redirects and must be last
+# Using 200 status to preserve the URL in the browser
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+

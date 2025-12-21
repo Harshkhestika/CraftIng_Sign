@@ -1,0 +1,7 @@
+there are some alteration in the frontend. 
+1. map present have earth map , change to the location of the addres provided + pin point which redirects to google maps of that locaton.
+2. on uploading multiple photos of a product it is not getting shown in the website. as like amazon make it like in the left there should be all photos uploaded one   below another in small and right of it the photo should appear which ever user selects from those small photos like amazon. 
+3. on uploading the description it is showing like a paragraph. it should be provided like the content i provide, with gaps etc. 
+4. in the admin section remove the sign out button from the bottom and also remove the update section from the left side bar. 
+5. just below the shop by catagory create a section which shows the current special offer. it should look like a photo which will be the entire width and length of that section and in the center with a very good fonts the sprcial offer should be visible with the text also.
+6. in the our story sectoin make it like, our story then below that all content. 
