@@ -116,17 +116,17 @@ CLOUDINARY_API_SECRET=your_api_secret
 2. Start the frontend server (npm start in frontend/)
 3. Open your browser and visit: http://localhost:3000
 
-🎓 Learning Outcomes
+### 🎓 Learning Outcomes
 ✅ Built a real-world MERN stack application
 ✅ Gained hands-on experience with cloud deployment
 ✅ Designed scalable backend APIs
 ✅ Improved production-level development skills
 ✅ Worked in a collaborative team environment
 
-👨‍💻 Author
+### 👨‍💻 Author
 Harsh Khestika
 Full-Stack MERN Developer
 💼 LinkedIn: https://www.linkedin.com/in/harsh-khestika-36533a298/ 
 
-⭐ Acknowledgements
+### ⭐ Acknowledgements
 This project was developed under the guidance of my institute, as part of an academic and practical learning experience.
