@@ -1,6 +1,5 @@
 # 🌐 CraftingSign – MERN Stack Web Application
 
-![CraftingSign Banner](screenshots/banner.png)
 
 **CraftingSign** is a **production-ready MERN stack web application** designed to showcase and manage **premium acrylic signage and custom event card designs** for weddings, corporate events, birthdays, and other celebrations.  
 The platform serves **both Indian and international clients**, focusing on **performance, clean UI/UX, and scalable architecture**.
@@ -42,7 +41,6 @@ The platform serves **both Indian and international clients**, focusing on **per
 
 ## 📸 Screenshots
 
-> Create a folder named **`screenshots/`** in the project root.
 
 ### 🏠 Home Page
 ![Home Page](screenshots/home.png)
