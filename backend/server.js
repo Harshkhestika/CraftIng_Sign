@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import fs from 'fs'; // Ensure fs is imported
+import fs from 'fs'; // Ensure fs is importeds
 
 // Import routes
 import productRoutes from './routes/productRoutes.js';
@@ -116,4 +116,5 @@ const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
+
 });
