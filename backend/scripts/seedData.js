@@ -6,6 +6,7 @@ import User from '../models/User.js';
 
 dotenv.config();
 
+
 const seedData = async () => {
   try {
     // Connect to MongoDB
